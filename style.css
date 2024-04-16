@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    font-family: "Staatliches", sans-serif;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.logo {
+    width: 180px;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.logo:hover {
+    background: url(./img/logo-light.png);
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_links {
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(180deg, #6774E5 0%, #2735BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: 0.4s;
+}
+
+.nav_links:hover {
+    background: linear-gradient(180deg, #2f41db 0%, #1022c3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.shapes {
+    margin-top: 40px;
+    height: auto;
+    scrollbar-gutter: stable both-edges;
+}
+
+.hero_text {
+    margin-top: 100px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4755D3;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #2839d3;
+}
+
+button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero_top {
+    font-size: 50px;
+    margin: 0;
+    background: linear-gradient(180deg, #6774E5 0%, #2735BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.hero_main {
+    margin: 0;
+    font-size: 120px;
+    background: linear-gradient(180deg, #FFD464 0%, #F7A429 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 0.8em;
+
+}
+
+.hero_desc {
+    margin-top: 15px;
+    font-size: 24px;
+    color: rgba(0, 21, 205, 0.81);
+    opacity: 0.7;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.services_desc {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.content {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #6774E5 0%, #2735BE 100%);
+    color: white;
+}
+
+.content:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    /* letter-spacing: 1.5px; */
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.content a {
+    margin: 22px 0;
+    background: white;
+    color: #2f41db;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: .3s ease;
+}
+
+.content a:hover {
+    background: linear-gradient(180deg, #FFD464 0%, #F7A429 100%);
+    color: #2f41db;
+    border-radius: 4px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.form:hover {
+    box-shadow: 1px 1px 20px rgba(9, 5, 255, 0.616);
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333" width="18px" height="18px"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding-right: 30px;
+}
+
+.form-group button {
+    background: linear-gradient(180deg, #6774E5 0%, #2735BE 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background: linear-gradient(180deg, #4050e3 0%, #1e30d1 100%);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.contact-info {
+    margin-right: 20px;
+    background: linear-gradient(180deg, #4050e3e3 0%, #1e30d1d4 100%);
+    font-size: 25px;
+    /* text-align: center; */
+    padding: 30px;
+    color: rgb(234, 234, 234);
+    font-weight: normal;
+    border-radius: 20px;
+}
+
+.about_description {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px 60px;
+    text-align: justify;
+}
+
+.team {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.member {
+    width: 200px;
+    background: linear-gradient(180deg, #4050e3e3 0%, #1e30d1d4 100%);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.member:hover {
+    background: linear-gradient(180deg, #FFD464 0%, #F7A429 100%);
+    color: #2f41db;
+}
+
+.member:hover a {
+    color: #1022c3;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
